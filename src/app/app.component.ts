@@ -20,8 +20,8 @@ export class AppComponent implements OnInit {
   result: string;
   resultHtml: string;
   resultCss: string;
-  sass = '//github.com/mosdotlab/PrettyCodeForBlog/src/styles/pretty-code.scss';
-  css = '//github.com/mosdotlab/PrettyCodeForBlog/src/styles/pretty-code.css';
+  sass = '//github.com/mosdotlab/PrettyCodeForBlog/blob/master/src/styles/pretty-code.scss';
+  css = '//github.com/mosdotlab/PrettyCodeForBlog/blob/master/src/styles/pretty-code.css';
 
   constructor(
     private _formBuilder: FormBuilder,
