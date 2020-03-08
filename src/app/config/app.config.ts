@@ -73,7 +73,6 @@ export const propName: Tag = {
     openTag: `${openTag}_pXrop_nXame`
 };
 
-
 export const numbers: Tag = {
     re: reNumbers,
     span: '<span class="number">',

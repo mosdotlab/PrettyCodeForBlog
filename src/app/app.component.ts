@@ -77,7 +77,6 @@ export class AppComponent implements OnInit {
           this.result += '<br />';
         }
       } else {
-
         isFirstLine = true;
         el = this.parseQuotes(el, CONFIG.quotes.openTag);
 
@@ -139,7 +138,6 @@ export class AppComponent implements OnInit {
       this._snackBar.open('See the error in the console.', null, { duration: 5000 });
       this.result = '';
       this.resultHtml = '';
-
     }
     this.prettyForm.enable();
   }
