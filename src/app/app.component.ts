@@ -59,7 +59,6 @@ export class AppComponent implements OnInit {
     this.result = '';
     this.resultHtml = '';
     let isFirstLine = false;
-    const minIndex = this.getMinIndex(code);
 
     if (lang.comments) {
       lang.comments.forEach(comment => {
@@ -67,6 +66,7 @@ export class AppComponent implements OnInit {
       });
     }
 
+    const minIndex = this.getMinIndex(code);
     const codeArray = code.split('\n');
     const length = codeArray.length;
 
