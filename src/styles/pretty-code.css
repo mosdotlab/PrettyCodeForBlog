@@ -1,0 +1,106 @@
+.pretty-code-light {
+  font-family: monospace;
+  color: #000;
+  white-space: pre-line;
+  width: max-content;
+  padding: 1em;
+}
+
+.pretty-code-light p {
+  display: inline;
+  white-space: pre;
+  line-height: 1em;
+  font-size: initial;
+}
+
+.pretty-code-light .number {
+  color: #D500F9;
+  font-weight: bold;
+}
+
+.pretty-code-light .common-keyword {
+  color: #A208CD;
+  font-weight: bold;
+}
+
+.pretty-code-light .keyword {
+  color: #0000FF;
+  font-weight: bold;
+}
+
+.pretty-code-light .function,
+.pretty-code-light .arrow-function {
+  color: #827717;
+  font-weight: bold;
+}
+
+.pretty-code-light .quotes {
+  color: #A31515;
+}
+
+.pretty-code-light .comment {
+  color: #00897B;
+}
+
+.pretty-code-light .html-tag {
+  color: #800000;
+  font-weight: bold;
+}
+
+.pretty-code-light .prop-name {
+  color: #D84315;
+  font-weight: bold;
+}
+
+.pretty-code-dark {
+  font-family: monospace;
+  background-color: #263238;
+  color: #EFEBE9;
+  white-space: pre-line;
+  width: max-content;
+  padding: 1em;
+}
+
+.pretty-code-dark p {
+  display: inline;
+  white-space: pre;
+  line-height: 1em;
+  font-size: initial;
+}
+
+.pretty-code-dark .number {
+  color: #D500F9;
+}
+
+.pretty-code-dark .common-keyword {
+  color: #FF4081;
+}
+
+.pretty-code-dark .keyword {
+  color: #40C4FF;
+}
+
+.pretty-code-dark .html-keyword {
+  color: #FF3D00;
+}
+
+.pretty-code-dark .function,
+.pretty-code-dark .arrow-function {
+  color: mediumaquamarine;
+}
+
+.pretty-code-dark .quotes {
+  color: #E6DB74;
+}
+
+.pretty-code-dark .comment {
+  color: #78909C;
+}
+
+.pretty-code-dark .html-tag {
+  color: orangered;
+}
+
+.pretty-code-dark .prop-name {
+  color: #FBC02D;
+}

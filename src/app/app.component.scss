@@ -1,0 +1,28 @@
+.form-container {
+    margin: 2em;
+    text-align: center;
+
+    .form-buttons {
+        text-align: end;
+
+        button {
+            width: 10em;
+            margin-left: .3em;
+        }
+    }
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+textarea {
+    font-size: .8em;
+}
+
+pre {
+    overflow: scroll;
+    width: 90vw;
+    height: 50vh;
+    margin: 2em;
+}

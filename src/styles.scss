@@ -1,0 +1,128 @@
+.pretty-code-light {
+    font-family: monospace;
+    color: #000;
+    white-space: pre-line;
+    width: max-content;
+    padding: 1em;
+
+    p {
+        display: inline;
+        white-space: pre;
+        line-height: 1em;
+        font-size: initial;
+    }
+
+    .number {
+        color: #D500F9;
+        font-weight: bold;
+    }
+
+    .common-keyword {
+        color: #A208CD;
+        font-weight: bold;
+    }
+
+    .keyword {
+        color: #0000FF;
+        font-weight: bold;
+    }
+
+    .function {
+        color: #827717;
+        font-weight: bold;
+    }
+
+    .arrow-function {
+        @extend .function;
+    }
+
+    .quotes {
+        color: #A31515;
+    }
+
+    .comment {
+        color: #00897B;
+    }
+
+    .html-tag {
+        color: #800000;
+        font-weight: bold;
+    }
+
+    .prop-name {
+        color: #D84315;
+        font-weight: bold;
+    }
+}
+
+.pretty-code-dark {
+    font-family: monospace;
+    background-color: #263238;
+    color: #EFEBE9;
+    white-space: pre-line;
+    width: max-content;
+    padding: 1em;
+
+    p {
+        display: inline;
+        white-space: pre;
+        line-height: 1em;
+        font-size: initial;
+    }
+
+    .number {
+        color: #D500F9;
+    }
+
+    .common-keyword {
+        color: #FF4081;
+    }
+
+    .keyword {
+        color: #40C4FF;
+    }
+
+    .html-keyword {
+        color: #FF3D00;
+    }
+
+    .function {
+        color: mediumaquamarine;
+    }
+
+    .arrow-function {
+        @extend .function
+    }
+
+    .quotes {
+        color: #E6DB74;
+    }
+
+    .comment {
+        color: #78909C;
+    }
+
+    .html-tag {
+        color: orangered;
+    }
+
+    .prop-name {
+        color: #FBC02D;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
