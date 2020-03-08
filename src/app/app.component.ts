@@ -178,7 +178,6 @@ export class AppComponent implements OnInit {
     }
     const arr = [{ val: '', indices: [], index: -1 }];
     el = el.replace(re, (val) => {
-      console.log('parseSpecial', val);
       if (val.trim().length === 0) {
         return val;
       }
