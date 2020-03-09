@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   title = 'PrettyCodeForBlog';
   langs: any;
   themes: any;
+  code: string;
   selectedLang: string;
   selectedTheme: string;
   prettyForm: FormGroup;
@@ -27,6 +28,7 @@ export class AppComponent implements OnInit {
     private _formBuilder: FormBuilder,
     private _snackBar: MatSnackBar
   ) {
+    this.code = EXAMPLE;
     this.langs = Langs;
     this.themes = CONFIG.themes;
     this.selectedLang = Langs.JS.toString();
@@ -35,7 +37,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.prettyForm = this._formBuilder.group({
-      code: [EXAMPLE, [Validators.required]],
+      code: [this.code, [Validators.required]],
       lang: [this.selectedLang, [Validators.required]],
       theme: [this.selectedTheme, [Validators.required]]
     });
