@@ -19,7 +19,7 @@ export const reFirstSpaces = /[^ ].*$/g;
 export const reHtmlTags = /(\<|\<\/)([a-zA-Z0-9\-]*?)(\>|$| )|\>|\/\>|\/\</g;
 export const reBetweenHtmlTags = /(?<=[\<|\<\/])([a-zA-Z0-9\-]*?)(?=[\>|\/\>| ]|$)/g;
 export const reRoundBrackets = /\b([^\.\)\[\\:\>\{ ]*?)(?=[\(|$])/g;
-export const reArrowFunctions = /([a-zA-Z0-9]*?)(?=( = .* => ))/g;
+export const reArrowFunctions = /([a-zA-Z0-9]*?)(?=( =[ ]([^\.]*)[ ]=> ))/g;
 export const rePropName = /\b[^ ]*?\: /g;
 export const reNumbers = /(?<![A-Za-z0-9])[0-9]+/g;
 export const reWord = (word: string, flag: string) => new RegExp(`\\b${word}\\b`, flag);
