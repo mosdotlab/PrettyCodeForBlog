@@ -171,7 +171,7 @@ export class AppComponent implements OnInit {
   }
 
   parseSpecial(el: string, re: RegExp, openTag: string): string {
-    if (el.includes('\s*') || el.includes('^')) {
+    if (CONFIG.specialSymbols.some(x => el.includes(x))) {
       return el;
     }
     const arr = [{ val: '', indices: [], index: -1 }];

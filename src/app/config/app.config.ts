@@ -10,17 +10,19 @@ export const themes = [
     { value: 'Light', key: 'pretty-code-light' }
 ];
 
+export const specialSymbols = ['\s*', '^'];
+
 export const openTag = 'oXpen_tXag';
 export const closeTag = 'cXlose_tXag';
 
 export const reFirstSpaces = /[^ ].*$/g;
 export const reHtmlTags = /(\<|\<\/)([a-zA-Z0-9\-]*?)(\>|$| )|\>|\/\>|\/\</g;
 export const reBetweenHtmlTags = /(?<=[\<|\<\/])([a-zA-Z0-9\-]*?)(?=[\>|\/\>| ]|$)/g;
-export const reRoundBrackets = /\b([^\.\)\[\\:\>\{ ]*?)(?=[\(])/g;
+export const reRoundBrackets = /\b([^\.\)\[\\:\>\{ ]*?)(?=[\(|$])/g;
 export const reArrowFunctions = /([a-zA-Z0-9]*?)(?=( = .* => ))/g;
-export const rePropName = /\b.*?\: /g;
+export const rePropName = /\b[^ ]*?\: /g;
 export const reNumbers = /(?<![A-Za-z0-9])[0-9]+/g;
-export const reWord = (word: string, flag: string) => new RegExp(`(\\b\)${word}\\b`, flag);
+export const reWord = (word: string, flag: string) => new RegExp(`\\b${word}\\b`, flag);
 
 export const comments: Tag = {
     span: '<span class="comment">',
